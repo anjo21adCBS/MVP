@@ -2,7 +2,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { View } from 'react-native';
-import View1 from './src/screens/view1';
+import View1 from './screens/view1';
+
 
 export default function App() {
   return (
