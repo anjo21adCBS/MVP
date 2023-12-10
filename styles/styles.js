@@ -1,7 +1,7 @@
 // styles.js
 import { StyleSheet } from 'react-native';
 
-export const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -32,7 +32,16 @@ export const styles = StyleSheet.create({
     marginBottom: 15,
     width: '80%', // Bredde af inputfelt
   },
-
+  // Yderligere stilarter for View2
+  picker: {
+    width: '100%',
+    borderWidth: 1,
+    borderColor: '#ddd',
+    padding: 10,
+    marginBottom: 20,
+    borderRadius: 5,
+  },
+  // Eventuelle yderligere stilarter kan tilføjes her
 });
 
 export default styles;

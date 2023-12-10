@@ -1,16 +1,15 @@
 // view1.js
 import React from 'react';
-import { View, Text } from 'react-native';
-import CustomButton from '../components/comp1'; // Importer komponent
+import { View, Text, Button } from 'react-native';
 import styles from '../styles/styles'; // Importer stilarter
 
 const View1 = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Text style={styles.headerText}>Velkommen til Applikationen</Text>
-            <CustomButton 
+            <Button 
                 title="Opret Opgave" 
-                onPress={() => navigation.navigate('OpgaveDetaljer')} // Erstat med korrekt navigation
+                onPress={() => navigation.navigate('View2')} // Opdateret til at navigere til View2
             />
         </View>
     );

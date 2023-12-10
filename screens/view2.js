@@ -1,32 +1,29 @@
+//view2.js
 import React from 'react';
-import { View, Text, TextInput, Picker } from 'react-native';
-import styles from './styles'; // Antager, at din styles.js ligger i samme mappe
-import InputField from '../components/InputField'; // Antager, at komponenten ligger i components mappen
+import { View, Text, TextInput, Picker, Button } from 'react-native';
+import styles from '../styles/styles';
 
-const View2 = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Opgave Detaljer</Text>
-      
-      <InputField label="Deadline" />
-      <InputField label="Lokation" />
-      <InputField label="Startdato" />
-      
-      <Picker style={styles.picker}>
-        {/* Picker items for Sprogkrav */}
-      </Picker>
-      
-      <Picker style={styles.picker}>
-        {/* Picker items for Uddannelsesniveau */}
-      </Picker>
+const View2 = ({ navigation }) => {
+    return (
+        <View style={styles.container}>
+            <Text style={styles.headerText}>Opgave Detaljer</Text>
+            
+            {/* Eksempel på et tekstfelt */}
+            <TextInput style={styles.input} placeholder="Deadline" />
 
-      <Picker style={styles.picker}>
-        {/* Picker items for Erfaring */}
-      </Picker>
-      
-      {/* Andre nødvendige komponenter */}
-    </View>
-  );
+            {/* Eksempel på en dropdown-menu */}
+            <Picker style={styles.picker}>
+                <Picker.Item label="Vælg sprogkrav" value="default" />
+                <Picker.Item label="Dansk" value="danish" />
+                <Picker.Item label="Engelsk" value="english" />
+                {/* Flere valgmuligheder... */}
+            </Picker>
+
+            {/* Flere felter og dropdown-menuer... */}
+
+            <Button title="Gem Opgave" onPress={() => {/* Gem og naviger væk logik */}} />
+        </View>
+    );
 };
 
 export default View2;
