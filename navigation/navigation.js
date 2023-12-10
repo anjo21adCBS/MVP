@@ -1,8 +1,9 @@
+//Navigation
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import View1 from '../screens/View1';
-import View2 from '../screens/View2';
+import View1 from '../src/screens/View1';
+import View2 from '../src/screens/View2';
 
 const Stack = createStackNavigator();
 
