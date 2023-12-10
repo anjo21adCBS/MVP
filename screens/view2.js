@@ -1,4 +1,4 @@
-//view2.js
+// view2.js
 import React from 'react';
 import { View, Text, TextInput, Picker, Button } from 'react-native';
 import styles from '../styles/styles';
@@ -21,7 +21,8 @@ const View2 = ({ navigation }) => {
 
             {/* Flere felter og dropdown-menuer... */}
 
-            <Button title="Gem Opgave" onPress={() => {/* Gem og naviger væk logik */}} />
+            {/* Knap uden funktionalitet */}
+            <Button title="Gem Opgave" onPress={() => {}} />
         </View>
     );
 };
